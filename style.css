@@ -1,0 +1,31 @@
+.msu_green {
+    color: #18453b;
+    font-family: sans-serif;
+}
+div{
+    background-image: url(best_image_msu.jpg);
+    text-align: center;
+    height: 300px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+.main_header{
+    text-align: center;
+    color: #18453b;
+}
+
+.box{
+    height: auto;
+    width: 1100px;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 10px solid #18453b;
+    background-color: white;
+    text-align: center;
+}
