@@ -3,7 +3,7 @@
 
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="style.css"
+<link rel="stylesheet" href="style.css">
 
 <head>
     <title>The MSU Bathroom</title>
