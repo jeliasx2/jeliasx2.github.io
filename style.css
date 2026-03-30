@@ -1,31 +1,282 @@
-.msu_green {
-    color: #18453b;
+.vertical-marquee {
+    height: 50px; /* Adjust based on your needs */
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.marquee-content {
+    position: absolute;
+    top: 100%;
+    animation: vertical-marquee 8s linear infinite;
+    text-align: center;
+}
+
+.vertical-marquee p {
+    margin: 0;
+    height: 50px; /* Same as the container height */
+    line-height: 40px; /* Center the text vertically */
+}
+
+@keyframes vertical-marquee {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -500%; /* Adjust based on the number of lines */
+    }
+}
+
+/* Pause on Hover */
+.marquee:hover p, 
+.vertical-marquee:hover 
+.marquee-content {
+    animation-play-state: paused;
+}
+
+.warning_text{
+    font-family: sans-serif;
+    color: rgb(255, 255, 0);
+    font-style: normal;
+    font-size: 15px;
+}
+
+.head_division{
+    text-align: center;
+    background-color: #18453b;
+    padding: 20px;
+}
+
+.head_img{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #18453b;
+}
+
+.new_article{
+    background-color: rgb(170, 0, 0);
+    padding: 10px;
+}
+
+.new_article_text{
+    font-family: sans-serif;
+    color: rgb(255, 255, 74);
+    text-align: center;
+    font-style: normal;
+    margin: 0px;
+}
+
+.article_container, .ranked_division{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.article_division{
+    background-image: url(test_panorama.png);
+    background-position: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 200px;
+    padding: 15px;
+    align-items: center;
+}
+
+.article_title{
+    margin: 0;
+}
+
+.article_body_title{
+    align-self: center;
+    height: auto;
+    width:250px;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 8px solid #18453b;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.article_body_box{
+    height: auto;
+    width: 500px;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 8px solid #18453b;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
     font-family: sans-serif;
 }
-div{
-    background-image: url(best_image_msu.jpg);
-    text-align: center;
-    height: 300px;
-    padding: 20px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
+
+.song_division{
+    height: auto;
+    background-image: url(msu_tower_sunset.jpg);
+    background-position: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 200px;
+    background-position: center;
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'menu menu menu main main main '
+        'menu menu menu footer footer  footer';
+    gap: 0px;
+    padding: 10px;
+    border-top: 8px solid #18453b;
+    border-bottom: 8px solid #18453b;
 }
 
-
-.main_header{
+.item1 {
+    width: 500px;
+    grid-area: header;
     text-align: center;
-    color: #18453b;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 6px solid #18453b;
+    justify-self: center;
+}
+.item2 {
+    grid-area: menu;
+    margin: 10px;
+    border-color: #18453b;
+    border: 6px solid #18453b;
+    justify-self: right;
+}
+.item3 {
+    width: 500px;
+    grid-area: main;
+    text-align: center;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 6px solid #18453b;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.item4 {
+    grid-area: footer;
+    background-color: white;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 6px solid #18453b;
 }
 
-.box{
+.album_img{
+    border-radius: 20px;
+    height: 230px;
+    width: 230px;
+    align-self: center;
+}
+
+.ranked_division{
+    background-color: #4b726a;
+}
+
+.ranked_box{
     height: auto;
     width: auto;
     padding: 10px;
     margin: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 10px solid #18453b;
+    border: 8px solid #18453b;
     background-color: white;
     text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.bathroom_games_division{
+    background-color: chartreuse;
+}
+
+.bio_division{
+    background-image: url(random_bkgrd.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio_img{
+    border-radius: 20px;
+    height: 230px;
+    width: auto;
+}
+
+.bio_text{
+    height: 230px;
+    width: 500px;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 6px solid #18453b;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+
+.msu_green, .article_title{
+    color: #18453b;
+    font-family: sans-serif;
+}
+
+.msu_font{
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.main_header, .article_title{
+    text-align: center;
+    font-style: italic;
+}
+
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #ffffff;
+     color: #ffffff;
+     }
+
+.ol_li{
+    width: 100px;
+    justify-self: center;
+    font-family: sans-serif;
+}
+
+.ul_li{
+    width: 250;
+    justify-self: center;
+    padding: 11px;
+    font-family: sans-serif;
+}
+
+.ul_li_special{
+    width: 250;
+    justify-self: center;
+    padding-bottom: 12px;
+    font-family: sans-serif;
 }
