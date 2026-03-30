@@ -118,7 +118,7 @@
             For the song of the article today, we are including the 1993 Mexican classic "No Te Vayas Hoy" by 
             Los Rehenes. Los Rehenes are a band that formed out of Zacatecas, Mexico in 1982 but didn't
             garner popularity until 1992. The song "No Te Vayas Hoy" is simply a song about someone asking
-            loved one to not leave, pleading them to stay.
+            their loved one to not leave, pleading them to stay.
         </P>
         <audio id="myAudio" class="item4" controls>
             <source id="audio" src="no_te_vayas_hoy.mp3" type="audio/mpeg">
